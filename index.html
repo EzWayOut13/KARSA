@@ -23,7 +23,7 @@
 
     <!-- NavBar -->
     <section id="navbar">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark colored">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark font-colored">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">KARSA</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +49,39 @@
       </nav>
     </section>
 
+    <!-- Carousel -->
     <section>
-      <div class="container-fluid">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/borobudur.jpg" class="d-block w-100" alt="Candi Borobudur">
+            <div class="carousel-caption">
+              <a class="read-more btn btn-lg" href="https://www.youtube.com/" role="button">Baca Selengkapnya</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/bromo.jpg" class="d-block w-100" alt="Gunung Bromo">
+            <div class="carousel-caption">
+              <a class="read-more btn btn-lg" href="https://www.instagram.com/" role="button">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Control Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
+    <!-- footer -->
     <section>
-      <div class="colored" id="footer">
+      <div class="font-colored" id="footer">
         <a href="https://www.instagram.com/kamikarsa/"><i class="social-icon fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@kamikarsa?lang=en"><i class="social-icon fab fa-tiktok"></i></i></a>
         <a href="https://www.linkedin.com/company/kamikarsa/mycompany/?viewAsMember=true"><i class="social-icon fab fa-linkedin"></i></a>

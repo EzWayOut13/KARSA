@@ -2,10 +2,12 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.colored {
+.font-colored {
+  font-family: 'Playfair Display', serif;
   background-color: #4c0101;
   color: white;
 }
+
 
 .navbar-custom {
   background-color: #4c0101;
@@ -38,4 +40,14 @@ body {
 
 .copyright {
   font-size: 70%;
+}
+
+.read-more {
+  font-family: 'Playfair Display', serif;
+  background-color: #4c0101;
+  color: white;
+}
+
+.read-more:hover{
+  color: grey;
 }
