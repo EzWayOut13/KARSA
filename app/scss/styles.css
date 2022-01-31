@@ -3,13 +3,245 @@
   padding: 0;
 }
 
+.title-daddy {
+  font-family: "Playfair Display SC";
+}
+
+.title {
+  font-family: "Playfair Display";
+}
+
+.title-child {
+  font-family: "Montserrat";
+}
+
 .header {
   min-height: 100vh;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(99, 34, 14, 0.7)), to(rgba(224, 171, 155, 0.7))), url("/Images/bali.jpg");
-  background-image: linear-gradient(rgba(99, 34, 14, 0.7), rgba(224, 171, 155, 0.7)), url("/Images/bali.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 176, 155, 0.7)), to(rgba(95, 29, 9, 0.7))), url("/Images/bali.jpg");
+  background-image: linear-gradient(rgba(245, 176, 155, 0.7), rgba(95, 29, 9, 0.7)), url("/Images/bali.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5% 8%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header {
+  width: 100%;
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5px;
+  color: white;
+  text-decoration: none;
+}
+
+.brand .logo {
+  width: 25px;
+  height: 25px;
+}
+
+.brand h2 {
+  font-size: 20px;
+}
+
+.nav-links {
+  position: absolute;
+  background: #992426;
+  height: 100vh;
+  width: 180px;
+  top: 0;
+  right: 0;
+  text-align: left;
+  z-index: 2;
+  padding-left: 10px;
+  display: none;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: block;
+  margin-top: 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.fas {
+  display: block;
+  color: white;
+}
+
+.fa-times {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.fa-bars {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.text-box {
+  display: -ms-grid;
+  display: grid;
+  gap: 32px;
+  position: absolute;
+  color: white;
+  width: 100%;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 40px;
+}
+
+.text-link {
+  display: -ms-grid;
+  display: grid;
+  gap: 17px;
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+.btn a {
+  font-size: 14px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid #992426;
+  background: #992426;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-weight: 500;
+}
+
+.btn a:active {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (min-width: 576px) {
+  .brand h2 {
+    font-size: 25px;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .text-box {
+    top: 50%;
+  }
+}
+
+@media (min-width: 767px) {
+  .header nav i {
+    display: none;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: right;
+    background: unset;
+    position: relative;
+    height: unset;
+    z-index: unset;
+    width: unset;
+    top: unset;
+    right: unset;
+    padding-left: unset;
+  }
+  .nav-links i {
+    display: none;
+  }
+  .nav-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+  }
+  .text-box {
+    gap: 40px;
+  }
+  .text-box h1 {
+    font-size: 55px;
+  }
+  .text-link {
+    gap: 27px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #992426;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-align: left;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  .btn a:hover {
+    background: #992426;
+    border: 1px solid #992426;
+  }
+}
+
+@media (min-width: 1200px) {
+  .brand {
+    gap: 3px;
+  }
+  .brand .logo {
+    width: 45px;
+    height: 45px;
+  }
+  .brand h2 {
+    font-size: 35px;
+  }
+  .nav-links ul li a {
+    font-size: 20px;
+  }
+  .text-box {
+    gap: 50px;
+  }
+  .text-box h1 {
+    font-size: 75px;
+  }
+  .text-link {
+    font-size: 22px;
+    gap: 30px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

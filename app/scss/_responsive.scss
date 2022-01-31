@@ -1,0 +1,121 @@
+// Small devices
+@media (min-width: 576px)  {
+
+    .brand h2 {
+        font-size: 25px;
+    }
+    
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .text-box {
+        top: 50%;
+    }
+
+}
+
+// Medium devices: tablets
+@media (min-width: 767px) {
+    
+    .header nav i {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        text-align: right;
+        background: unset;
+        position: relative;
+        height: unset;
+        z-index: unset;
+        width: unset;
+        top: unset;
+        right: unset;
+        padding-left: unset;
+
+        i {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            gap: 25px;
+        }
+    }
+    
+    .text-box {
+        gap: 40px;
+
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+    .text-link {
+        gap: 27px;
+    }
+}
+
+// Large devices: desktops
+@media (min-width: 992px) {
+    
+    .nav-links ul li::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: $mainColor;
+        display: block;
+        transition: 0.5s;
+        text-align: left;
+    }
+
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+
+    .btn a:hover {
+        background: $mainColor;
+        border: 1px solid $mainColor;
+    }
+
+}
+
+// Extra large devices
+@media (min-width: 1200px) {
+       
+    .brand {
+        gap: 3px;
+
+        .logo {
+
+            width: 45px;
+            height: 45px;
+
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+    }
+
+    .nav-links ul li a{
+        font-size: 20px;
+    }
+
+    .text-box {
+
+        gap: 50px;
+
+        h1{
+            font-size: 75px;
+        }
+    }
+
+    .text-link {
+        font-size: 22px;
+        gap: 30px;
+    }
+}
